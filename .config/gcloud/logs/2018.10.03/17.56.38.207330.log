@@ -1,0 +1,9 @@
+2018-10-03 17:56:38,209 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth']
+2018-10-03 17:56:38,216 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'configure_docker']
+2018-10-03 17:56:38,217 DEBUG    root            Running [gcloud.auth.configure-docker] with arguments: []
+2018-10-03 17:56:38,218 WARNING  root            `docker-credential-gcloud` not in system PATH.
+gcloud's Docker credential helper can be configured but it will not work until this is corrected.
+2018-10-03 17:56:40,960 INFO     ___FILE_ONLY___ Docker configuration file updated.
+
+2018-10-03 17:56:40,961 INFO     root            Display format: "default"
+2018-10-03 17:56:40,966 DEBUG    root            SDK update checks are disabled.

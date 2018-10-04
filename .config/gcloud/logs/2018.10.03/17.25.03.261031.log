@@ -1,0 +1,78 @@
+2018-10-03 17:25:03,276 DEBUG    root            Loaded Command Group: [u'gcloud', u'container']
+2018-10-03 17:25:03,282 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters']
+2018-10-03 17:25:03,285 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters', u'create']
+2018-10-03 17:25:03,439 DEBUG    root            Running [gcloud.container.clusters.create] with arguments: [--zone: "us-west1-c", NAME: "lab04cluster"]
+2018-10-03 17:25:03,445 WARNING  root            Starting in 1.12, new clusters will have basic authentication disabled by default. Basic authentication can be enabled (or disabled) manually using the `--[no-]enable-basic-auth` flag.
+2018-10-03 17:25:03,445 WARNING  root            Starting in 1.12, new clusters will not have a client certificate issued. You can manually enable (or disable) the issuance of the client certificate using the `--[no-]issue-client-certificate` flag.
+2018-10-03 17:25:03,445 WARNING  root            Currently VPC-native is not the default mode during cluster creation. In the future, this will become the default mode and can be disabled using `--no-enable-ip-alias` flag. Use `--[no-]enable-ip-alias` flag to suppress this warning.
+2018-10-03 17:25:03,446 INFO     ___FILE_ONLY___ This will enable the autorepair feature for nodes. Please see
+https://cloud.google.com/kubernetes-engine/docs/node-auto-repair for more
+information on node autorepairs.
+
+
+2018-10-03 17:25:03,446 WARNING  root            Starting in Kubernetes v1.10, new clusters will no longer get compute-rw and storage-ro scopes added to what is specified in --scopes (though the latter will remain included in the default --scopes). To use these scopes, add them explicitly to --scopes. To use the new behavior, set container/new_scopes_behavior property (gcloud config set container/new_scopes_behavior true).
+2018-10-03 17:25:07,384 INFO     ___FILE_ONLY___ Creating cluster lab04cluster...
+2018-10-03 17:27:33,676 INFO     root            Operation <Operation
+ endTime: u'2018-10-03T17:27:32.762018955Z'
+ name: u'operation-1538587507355-782909b3'
+ operationType: OperationTypeValueValuesEnum(CREATE_CLUSTER, 1)
+ selfLink: u'https://container.googleapis.com/v1/projects/871143460440/zones/us-west1-c/operations/operation-1538587507355-782909b3'
+ startTime: u'2018-10-03T17:25:07.355710052Z'
+ status: StatusValueValuesEnum(DONE, 3)
+ targetLink: u'https://container.googleapis.com/v1/projects/871143460440/zones/us-west1-c/clusters/lab04cluster'
+ zone: u'us-west1-c'> succeeded after 146.290 seconds
+2018-10-03 17:27:34,621 INFO     ___FILE_ONLY___ Created [https://container.googleapis.com/v1/projects/lab-02-216417/zones/us-west1-c/clusters/lab04cluster].
+
+2018-10-03 17:27:34,621 INFO     ___FILE_ONLY___ To inspect the contents of your cluster, go to: https://console.cloud.google.com/kubernetes/workload_/gcloud/us-west1-c/lab04cluster?project=lab-02-216417
+
+2018-10-03 17:27:34,622 DEBUG    root            unable to load default kubeconfig: unable to load kubeconfig for /home/andre_kupelian7/.kube/config: Unable to read file [/home/andre_kupelian7/.kube/config]: [Errno 2] No such file or directory: '/home/andre_kupelian7/.kube/config'; recreating /home/andre_kupelian7/.kube/config
+2018-10-03 17:27:34,630 DEBUG    root            Saved kubeconfig to /home/andre_kupelian7/.kube/config
+2018-10-03 17:27:34,630 INFO     ___FILE_ONLY___ kubeconfig entry generated for lab04cluster.
+
+2018-10-03 17:27:34,632 INFO     root            Display format: "
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+"
+2018-10-03 17:27:34,639 INFO     ___FILE_ONLY___ NAME
+2018-10-03 17:27:34,639 INFO     ___FILE_ONLY___           
+2018-10-03 17:27:34,639 INFO     ___FILE_ONLY___ LOCATION
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___     
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___ MASTER_VERSION
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___   
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___ MASTER_IP
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___        
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___    
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___ NODE_VERSION
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___   
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___ NUM_NODES
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___   
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___ STATUS
+2018-10-03 17:27:34,640 INFO     ___FILE_ONLY___ 
+
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___ lab04cluster
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___   
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___ us-west1-c
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___   
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___ 1.9.7-gke.6
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___      
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___ 35.199.188.232
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___   
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___ n1-standard-1
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___   
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___ 1.9.7-gke.6
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___    
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___ 3
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___           
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___ RUNNING
+2018-10-03 17:27:34,641 INFO     ___FILE_ONLY___ 
+
+2018-10-03 17:27:34,643 DEBUG    root            SDK update checks are disabled.
